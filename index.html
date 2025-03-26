@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Frank Le</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #222;
+            font-family: "Futura", "Bauhaus 93", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+        color: black;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #d91e18;
+            text-align: center;
+            padding: 10px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #f4f4f4;
+            text-stroke: 1px gold;
+            -webkit-text-stroke: 1px gold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 5px 0 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease-out;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #222;
+        }
+
+        section {
+            padding-top: 60px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #d91e18;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .about-container, .experience-container, .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .about-container img {
+            width: 250px;
+            height: auto;
+            margin-right: 30px;
+            border: 3px solid #222;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color: #444;
+            text-transform: uppercase;
+        }
+      
+        h4 {
+            font-size: 1.2em;
+        }
+
+        .skills-list, .applications-list, .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list span, .applications-list span, .contact-list summary, .contact-list span {
+            background-color: #ffcc00;
+            padding: 10px 15px;
+            border: 2px solid #222;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-block;
+        }
+      
+        .contact-list summary:hover, .contact-list span:hover {
+            background-color: black;
+            color: #ffcc00;
+        }
+
+        .hidden-content {
+            margin-top: 5px;
+            padding: 10px;
+            font-weight: bold;
+        }
+      
+        p.body-text {  
+            font-family: "Futura", sans-serif;
+            font-weight: bold;
+        }
+      
+        ul.experience {
+            font-family: "Futura", sans-serif;
+            font-weight: bold;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frank Le</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="portrait.jpg" alt="Profile Picture">
+            <div class="about-text">
+                <p class="body-text">Welcome to my personal website! I'm Frank Le&mdash;an undergraduate student in Global Business and Digital Arts at the University of Waterloo, Canada. I'm in pursuit of a career in multidisciplinary design and film production. If you're interested in what I do, don't hesitate to reach out!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <h3>Work &amp Volunteering Experience</h3>
+            <h4>CSDS (Centre for Sustainable Development Studies) - Hanoi, Vietnam</h4>
+            <p><strong>Local Volunteer</strong> | June 2022 - October 2022</p>
+            <ul class="experience">
+                <li>Collaborated with international volunteers to support community initiatives.</li>
+                <li>Created and managed social media content to promote the organization’s activities and impact.</li>
+                <li>Assisted in planning and organizing events for children, fostering inclusive and enriching experiences.</li>
+                <li>Managed volunteer recruitment and event photography to support a successful community initiative, leading to over 200 engagements on Facebook.</li>
+            </ul>
+            <h3>Skills</h3>
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>UI/UX Design</span>
+                <span>Graphic Design</span>
+                <span>Film Production</span>
+                <span>Project Management</span>
+            </div>
+            <h3>Applications</h3>
+            <div class="applications-list">
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+                <span>InDesign</span>
+                <span>Premiere Pro</span>
+                <span>DaVinci Resolve</span>
+                <span>Figma</span>
+            </div>
+        </div>
+    </section>
+  
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-list">
+                <details>
+                    <summary>Email</summary>
+                    <div class="hidden-content">frank.lvxa@gmail.com</div>
+                </details>
+                <details>
+                    <summary>Phone</summary>
+                    <div class="hidden-content">+1 (548) 255-5438</div>
+                </details>
+                <a href="https://www.linkedin.com/in/frank-lvxa" target="_blank"><span>LinkedIn</span></a>
+                <a href="https://www.instagram.com/leuvxuanhna/" target="_blank"><span>Instagram</span></a>
+                <a href="https://www.facebook.com/vuxuananhle/" target="_blank"><span>Facebook</span></a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Frank Le. All rights reserved.</p>
+    </footer>
+</body>
+</html>
